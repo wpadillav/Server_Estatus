@@ -1,3 +1,4 @@
+# daemon
 #!/bin/bash
 
 # Cargar variables del archivo .env
