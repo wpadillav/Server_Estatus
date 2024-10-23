@@ -18,4 +18,5 @@ Este proyecto es un script en Bash que monitorea el estado de un servicio en Lin
    cd service-monitor-telegram
 2. Crear un archivo `.env` para almacenar de forma segura las credenciales (Token y Chat ID).
 3. hacer el daemon.sh un ejecutable mediante "chmod +x daemon.sh"
+4. Para ejecutyar con bash (bash daemon.sh)
 
