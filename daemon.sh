@@ -34,6 +34,16 @@ case $opcion in
     ;;
 esac
 
+if [ $opcion -eq 1 ]; then
+    opcion="mariadb/mysql"
+elif [ $opcion -eq 2 ]; then
+    opcion="apache2"
+elif [ $opcion -eq 3 ]; then
+    opcion="ufw"
+fi
+
+resultado=$opcion": "$resultado
+
 # enviamos el resultado por telegram
 curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage -d chat_id=$TELEGRAM_CHAT_ID -d text="$resultado"
 
